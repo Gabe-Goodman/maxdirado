@@ -10,10 +10,10 @@ export default function PreSave() {
 					alt="Mourning Dove"
 					className="presave-image"
 				/>
-				<div className="presave-text">
-					<h2>pre-save new song</h2>
-					<h3>"MOURNING DOVE"</h3>
-					<p>out everywhere August 26th</p>
+				<div>
+					<h2 className="presave-text">pre-save new song</h2>
+					<h3 className="presave-track-text">MOURNING DOVE</h3>
+					<p className="presave-info-text">out everywhere August 26th</p>
 					<button className="presave-button">pre-save</button>
 				</div>
 			</div>
@@ -35,7 +35,15 @@ export default function PreSave() {
 					margin-top: -100px;
 				}
 				.presave-text {
+					color: black;
+					text-align: left;
+				}
+				.presave-track-text {
 					color: white;
+					text-align: left;
+				}
+				.presave-info-text {
+					color: black;
 					text-align: left;
 				}
 				.presave-button {

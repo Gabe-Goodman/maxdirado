@@ -7,7 +7,8 @@
   font-weight: 700; /* Use the loaded 700 weight from Poppins */
   color: black;
   text-transform: lowercase;
-  font-family: 'Poppins', sans-serif; /* Use the imported Poppins font */
+  font-weight: 600;
+  font-style: normal;
   text-align: center;
   z-index: 2;
   position: relative;

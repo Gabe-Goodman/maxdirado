@@ -4,19 +4,18 @@ import Image from "next/image";
 
 export default function Hero() {
 	return (
-        <section className="hero">
+		<section className="hero">
 			<Image
-                src="/images/hero.jpg"
-                alt="Max DiRado"
-                width={100}
-                height={0}
-                sizes="100vw"
-                style={{
-                    width: "auto",
-                    height: "auto",
-                    width: "100%",
-                    height: "auto"
-                }} />
+				src="/images/hero.jpg"
+				alt="Max DiRado"
+				width={100}
+				height={0}
+				sizes="100vw"
+				style={{
+					width: "100%",
+					height: "auto",
+				}}
+			/>
 			<style jsx>{`
 				.hero {
 					display: flex;
@@ -27,5 +26,5 @@ export default function Hero() {
 				}
 			`}</style>
 		</section>
-    );
+	);
 }

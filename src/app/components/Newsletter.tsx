@@ -11,7 +11,7 @@ export default function Newsletter() {
 			</form>
 			<style jsx>{`
 				.newsletter {
-					background-color: #e9d35c;
+					background-color: #5cb2e0;
 					padding: 40px 20px;
 					text-align: center;
 				}
