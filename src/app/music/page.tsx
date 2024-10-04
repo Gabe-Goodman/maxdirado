@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Music.module.css";
-import Header from "../components/Header"; // Import the existing Header component
+import { Header, Footer } from "../components"; // Import the existing Header component
 
 export default function MusicPage() {
 	return (
@@ -65,8 +65,7 @@ export default function MusicPage() {
 				<div className={styles.gridItem}>
 					<Image
 						// Your image path
-						src="/images/mourning-dove.jpg"
-						// src="/images/humor-violence.jpg" // Your image path
+						src="/images/humor-as-violence.jpg"
 						alt="humor as violence"
 						width={300}
 						height={300}
@@ -82,8 +81,7 @@ export default function MusicPage() {
 				<div className={styles.gridItem}>
 					<Image
 						// Your image path
-						src="/images/mourning-dove.jpg"
-						// src="/images/christmas-ep.jpg" // Your image path
+						src="/images/christmas-ep.jpg"
 						alt="christmas EP"
 						width={300}
 						height={300}
@@ -99,8 +97,7 @@ export default function MusicPage() {
 				<div className={styles.gridItem}>
 					<Image
 						// Your image path
-						src="/images/mourning-dove.jpg"
-						// src="/images/el-dirado.jpg" // Your image path
+						src="/images/el-dirado.jpg"
 						alt="el dirado"
 						width={300}
 						height={300}
@@ -113,6 +110,7 @@ export default function MusicPage() {
 					<p>el dirado [2018]</p>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 }

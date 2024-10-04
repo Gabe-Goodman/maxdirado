@@ -1,7 +1,7 @@
 // components/PreSave.tsx
 "use client";
 
-export default function PreSave() {
+export function PreSave() {
 	return (
 		<section className="presave">
 			<div className="presave-container">
@@ -11,10 +11,10 @@ export default function PreSave() {
 					className="presave-image"
 				/>
 				<div>
-					<h2 className="presave-text">pre-save new song</h2>
-					<h3 className="presave-track-text">MOURNING DOVE</h3>
-					<p className="presave-info-text">out everywhere August 26th</p>
-					<button className="presave-button">pre-save</button>
+					<h2 className="presave-text">Stream</h2>
+					<h3 className="presave-track-name-text">"MOURNING DOVE"</h3>
+					<p className="presave-info-text">Everywhere</p>
+					<button className="presave-button">Listen</button>
 				</div>
 			</div>
 			<style jsx>{`
@@ -29,26 +29,37 @@ export default function PreSave() {
 					max-width: 1200px;
 					margin: 0 auto;
 				}
-				.presave-image {
-					max-width: 55vw;
-					margin-right: 20px;
-					margin-top: -100px;
+				/* Media query for responsiveness */
+				@media (min-width: 768px) {
+					.presave-image {
+						max-width: 55vw;
+						margin-right: 200px;
+						margin-top: -10vw;
+					}
+					.presave-text {
+						color: black;
+						font-size: 50px;
+						font-weight: 750; /* Use the loaded 700 weight from Poppins */
+						text-align: left;
+					}
+					.presave-track-name-text {
+						color: white;
+						text-align: left;
+						font-size: 80px;
+						font-weight: 750; /* Use the loaded 700 weight from Poppins */
+					}
 				}
-				.presave-text {
-					color: black;
-					text-align: left;
-				}
-				.presave-track-text {
-					color: white;
-					text-align: left;
-				}
-				.presave-info-text {
-					color: black;
-					text-align: left;
+				@media (max-width: 768px) {
+					.presave-image {
+						max-width: 55vw;
+						margin-right: 20px;
+						margin-top: -100px;
+					}
 				}
 				.presave-button {
-					background-color: #7bf15e;
-					border: none;
+					background-color: #7eef5a;
+					border-radius: 12px
+					border: 2px;
 					padding: 10px 20px;
 					cursor: pointer;
 				}

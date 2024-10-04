@@ -1,18 +1,21 @@
-// components/Newsletter.tsx
+// components/Patreon.tsx
 "use client";
 
-export function Newsletter() {
+export function Patreon() {
 	return (
 		<section className="newsletter">
-			<h3 className="keepup">keep up with me!</h3>
-			<h4 className="join">join my newsletter</h4>
+			<h3 className="keepup">Subscribe to my Patreon</h3>
+			<h4 className="join">
+				{`and gain access to early and exclusive releases \n 
+                stems, poetry collections and more!`}
+			</h4>
 			<form>
 				<input type="email" placeholder="you@example.com" />
-				<button type="submit">submit</button>
+				<button type="submit">Patreon</button>
 			</form>
 			<style jsx>{`
 				.newsletter {
-					background-color: #5cb2e0;
+					background-color: #85ff4a;
 					padding: 40px 20px;
 					text-align: center;
 					size: 200;

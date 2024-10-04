@@ -1,7 +1,7 @@
 // components/FeatureSection.tsx
 "use client";
 
-export default function FeatureSection() {
+export function FeatureSection() {
 	return (
 		<section className="features">
 			<div className="feature-card">
@@ -23,11 +23,11 @@ export default function FeatureSection() {
 				.features {
 					display: flex;
 					justify-content: space-around;
-					background-color: #f3dd5f;
+					background-color: #f1d95f;
 					padding: 40px 20px;
 				}
 				.feature-card {
-					background-color: #f24133;
+					background-color: #d95741;
 					color: white;
 					padding: 20px;
 					width: 30%;

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa"; // Install react-icons if you haven't: npm install react-icons
 
-export default function Header() {
+export function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleMenu = () => {
@@ -12,18 +12,18 @@ export default function Header() {
 	};
 
 	return (
-        <header className="header">
+		<header className="header">
 			<Link href="/">
 				<Image
-                    width={300}
-                    height={300}
-                    // Your image path
-                    src="/images/maxdiradologo.png"
-                    alt="Max Dirado"
-                    style={{
-                        maxWidth: "100%",
-                        height: "auto"
-                    }} />
+					width={300}
+					height={300}
+					src="/images/maxdiradologo.png"
+					alt="Max Dirado"
+					style={{
+						maxWidth: "100%",
+						height: "auto",
+					}}
+				/>
 			</Link>
 			<nav>
 				{/* Full nav links for desktop view */}
@@ -66,8 +66,8 @@ export default function Header() {
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog" onClick={toggleMenu}>
-								Blog
+							<Link href="/about" onClick={toggleMenu}>
+								About
 							</Link>
 						</li>
 						<li>
@@ -175,5 +175,5 @@ export default function Header() {
 				}
 			`}</style>
 		</header>
-    );
+	);
 }
