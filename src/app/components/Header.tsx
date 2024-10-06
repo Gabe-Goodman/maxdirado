@@ -61,8 +61,8 @@ export function Header() {
 							</Link>
 						</li>
 						<li>
-							<Link href="/videos" onClick={toggleMenu}>
-								Videos
+							<Link href="/video" onClick={toggleMenu}>
+								Video
 							</Link>
 						</li>
 						<li>

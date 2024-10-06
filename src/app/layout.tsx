@@ -20,8 +20,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={poppins.className}>
-			{" "}
-			{/* Apply the Poppins font globally */}
 			<body>{children}</body>
 		</html>
 	);

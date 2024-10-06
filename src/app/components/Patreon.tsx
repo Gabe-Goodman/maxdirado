@@ -3,45 +3,39 @@
 
 export function Patreon() {
 	return (
-		<section className="newsletter">
-			<h3 className="keepup">Subscribe to my Patreon</h3>
+		<section className="patreon">
+			<h3 className="keepup">subscribe to my patreon</h3>
 			<h4 className="join">
-				{`and gain access to early and exclusive releases \n 
+				{`and gain access to early and exclusive releases, \n 
                 stems, poetry collections and more!`}
 			</h4>
-			<form>
-				<input type="email" placeholder="you@example.com" />
-				<button type="submit">Patreon</button>
-			</form>
+			<button className="presave-button">patreon</button>
 			<style jsx>{`
-				.newsletter {
-					background-color: #85ff4a;
+				.patreon {
+					background-color: #7ff760;
 					padding: 40px 20px;
 					text-align: center;
 					size: 200;
 					color: black;
 				}
 				.keepup {
-					font-size: 20px;
-					font-weight: 500;
+					font-size: 29px;
+					font-weight: 750;
 					color: black;
 				}
 				.join {
-					color: #60676a;
+					color: black;
 					margin-bottom: 20px;
 					font-size: 17px;
-					font-weight: 300;
+					font-weight: 500;
 				}
-				input {
-					padding: 10px;
-					margin-right: 10px;
-					border: none;
-				}
-				button {
-					padding: 10px;
-					background-color: black;
-					color: white;
-					border: none;
+				.presave-button {
+					color: black;
+					font-size: 15px;
+					font-weight: 500;
+					background-color: #f29048;
+					border-radius: 4px;
+					padding: 7px 20px;
 					cursor: pointer;
 				}
 			`}</style>

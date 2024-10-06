@@ -8,8 +8,6 @@ import {
 	Newsletter,
 	Footer,
 } from "./components";
-
-// _app.tsx or layout.tsx
 import "./globals.css";
 
 export default function HomePage() {
