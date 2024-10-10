@@ -38,7 +38,7 @@ export function BandcampAlbum({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<FaBandcamp size={32} />
+						<FaBandcamp size={75} />
 					</a>
 				</div>
 			</div>

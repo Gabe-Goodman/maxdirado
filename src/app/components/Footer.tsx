@@ -1,33 +1,25 @@
 // components/Footer.tsx
 "use client";
 import Link from "next/link";
-import {
-	FaXTwitter,
-	FaInstagram,
-	FaYoutube,
-	FaLinkedin,
-} from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
 
 export function Footer() {
 	return (
 		<footer className="footer">
-			<div className="gridContainer">
-				<div className="footer-content">
-					<div className="social-icons">
-						<a href="https://twitter.com" aria-label="Twitter">
-							<FaXTwitter size={28} />
-						</a>
-						<a href="https://instagram.com" aria-label="Instagram">
-							<FaInstagram size={28} />
-						</a>
-						<a href="https://youtube.com" aria-label="YouTube">
-							<FaYoutube size={28} />
-						</a>
-						<a href="https://linkedin.com" aria-label="LinkedIn">
-							<FaLinkedin size={28} />
-						</a>
-					</div>
+			<div className="footer-content-left">
+				<div className="social-icons">
+					<a href="https://twitter.com" aria-label="Twitter">
+						<FaInstagram size={28} />
+					</a>
+					<a href="https://instagram.com" aria-label="Instagram">
+						<FaTiktok size={28} />
+					</a>
+					<a href="https://youtube.com" aria-label="YouTube">
+						<FaYoutube size={28} />
+					</a>
 				</div>
+			</div>
+			<div className="footer-content-right">
 				<div className="footer-links">
 					<h4>Links</h4>
 					<ul>
@@ -40,7 +32,7 @@ export function Footer() {
 						<li>
 							<Link href="/about">About</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link href="/tour">Tour</Link>
 						</li>
 						<li>
@@ -48,31 +40,39 @@ export function Footer() {
 						</li>
 						<li>
 							<Link href="/contact">Contact</Link>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 			</div>
+			<div className="copyright">
+				<p>
+					Copyright Max DiRado.{" "}
+					<a href="https://github.com/Gabe-Goodman?tab=repositories">
+						Created by Gabe Goodman
+					</a>
+				</p>
+			</div>
 			<style jsx>{`
-				.gridContainer {
-					display: grid;
-					grid-template-columns: repeat(5, minmax(300px, 1fr));
-					gap: auto;
-				}
 				.footer {
 					padding: 20px;
 					background-color: white;
 					border-top: 1px solid #eaeaea;
 				}
-				.footer-content {
+				.footer-content-left {
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start; /* Align everything to the left */
+				}
+				.footer-content-right {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end; /* Align everything to the left */
 				}
 				.social-icons {
 					color: black;
 					display: flex;
 					gap: 20px;
-					margin-bottom: 20px; /* Add space between icons and links */
+					margin-bottom: -30px; /* Add space between icons and links */
 				}
 				.footer-links {
 					display: flex;
@@ -99,6 +99,17 @@ export function Footer() {
 				}
 				.footer-links a:hover {
 					text-decoration: underline;
+				}
+				.copyright {
+					color: gray;
+					font-size: 12px;
+				}
+				.copyright a {
+					text-decoration: underline;
+				}
+				p {
+					align-items: center;
+					text-align: center;
 				}
 			`}</style>
 		</footer>

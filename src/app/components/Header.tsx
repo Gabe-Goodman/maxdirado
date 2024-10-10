@@ -32,12 +32,12 @@ export function Header() {
 						<Link href="/music">Music</Link>
 					</li>
 					<li>
-						<Link href="/videos">Videos</Link>
+						<Link href="/video">Video</Link>
 					</li>
 					<li>
 						<Link href="/blog">Blog</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link href="/tour">Tour</Link>
 					</li>
 					<li>
@@ -45,7 +45,7 @@ export function Header() {
 					</li>
 					<li>
 						<Link href="/contact">Contact</Link>
-					</li>
+					</li> */}
 				</ul>
 				{/* Hamburger menu for mobile view */}
 				<div className="hamburger" onClick={toggleMenu}>
@@ -70,7 +70,7 @@ export function Header() {
 								About
 							</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link href="/tour" onClick={toggleMenu}>
 								Tour
 							</Link>
@@ -84,7 +84,7 @@ export function Header() {
 							<Link href="/contact" onClick={toggleMenu}>
 								Contact
 							</Link>
-						</li>
+						</li> */}
 					</ul>
 				)}
 			</nav>

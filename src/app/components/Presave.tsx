@@ -36,17 +36,20 @@ export function PreSave() {
 
 				@media (min-width: 768px) {
 					.presave-text-container {
+						background-color: #f29048;
+						border-radius: 12px;
 						margin-left: -15vw;
 						margin-top: -5vw;
+						padding: 0px 50px;
 					}
 					.presave-image {
-						max-width: 50vw;
+						max-width: 40vw;
 						margin-right: 200px;
 						margin-top: -10vw;
 					}
 					.presave-text {
 						color: black;
-						font-size: 50px;
+						font-size: 40px;
 						font-weight: 750;
 						text-align: center;
 					}
@@ -65,6 +68,7 @@ export function PreSave() {
 						font-weight: 400;
 					}
 					.presave-button {
+						margin-bottom: 20px;
 						color: black;
 						font-size: 30px;
 						font-weight: 500;

@@ -7,3 +7,4 @@ export * from "./Patreon";
 export * from "./Newsletter";
 export * from "./PreSave";
 export * from "./Footer";
+export * from "./Tiktok";
