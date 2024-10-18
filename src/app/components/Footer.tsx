@@ -8,13 +8,13 @@ export function Footer() {
 		<footer className="footer">
 			<div className="footer-content-left">
 				<div className="social-icons">
-					<a href="https://twitter.com" aria-label="Twitter">
+					<a href="https://www.instagram.com/diradomax/" aria-label="Instagram">
 						<FaInstagram size={28} />
 					</a>
-					<a href="https://instagram.com" aria-label="Instagram">
+					<a href="https://www.tiktok.com/@maxdirado" aria-label="TikTok">
 						<FaTiktok size={28} />
 					</a>
-					<a href="https://youtube.com" aria-label="YouTube">
+					<a href="https://www.youtube.com/@maxdirado" aria-label="YouTube">
 						<FaYoutube size={28} />
 					</a>
 				</div>

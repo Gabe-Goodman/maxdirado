@@ -38,14 +38,14 @@ export function FeatureSection() {
 			<div className="feature-card">
 				<div className="title">
 					<AiOutlineInfoCircle color="black" size="25" />
-					<h3>more</h3>
+					<h3>video</h3>
 				</div>
 				<p>
 					Keep up with Max DiRado&apos;s feed, from candid TikToks to live
 					YouTube performances and visualizers.
 				</p>
 				<Link href="/video">
-					<button>watch</button>
+					<button>more</button>
 				</Link>
 			</div>
 			<style jsx>{`
