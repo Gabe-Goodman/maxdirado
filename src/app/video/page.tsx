@@ -1,13 +1,9 @@
 // app/music/page.tsx
 "use client";
 import styles from "./Video.module.css";
-import { Header, Footer, Album, BandcampAlbum, Tiktok } from "../components"; // Import the existing Header component
+import { Header, Footer, TikTokEmbedComponent } from "../components"; // Import the existing Header component
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar } from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/scrollbar";
 
 export default function VideoPage() {
 	return (
@@ -19,6 +15,7 @@ export default function VideoPage() {
 				</div>
 			</div>
 			<>
+				<TikTokEmbedComponent />
 				<Swiper
 					scrollbar={{
 						hide: true,
@@ -26,86 +23,103 @@ export default function VideoPage() {
 					modules={[Scrollbar]}
 					className="mySwiper"
 				>
-					<SwiperSlide>
-						<Tiktok link="https://www.tiktok.com/@maxdirado/video/7331900371213897002" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Tiktok link="https://www.tiktok.com/@maxdirado/video/7331900371213897002" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Tiktok link="https://www.tiktok.com/@maxdirado/video/7331900371213897002" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Tiktok link="https://www.tiktok.com/@maxdirado/video/7331900371213897002" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Tiktok link="https://www.tiktok.com/@maxdirado/video/7331900371213897002" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Tiktok link="https://www.tiktok.com/@maxdirado/video/7331900371213897002" />
-					</SwiperSlide>
+					<SwiperSlide>1</SwiperSlide>
+					<SwiperSlide>2</SwiperSlide>
+					<SwiperSlide>3</SwiperSlide>
+					<SwiperSlide>4</SwiperSlide>
+					<SwiperSlide>5</SwiperSlide>
+					<SwiperSlide>6</SwiperSlide>
 				</Swiper>
 			</>
-			<div className={styles.gridContainer}>
-				<div className={styles.gridItem}>
-					<Album
-						imageSrc="/images/mourning-dove.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
-						albumTitle="Mourning Dove [2024]"
-					/>
-				</div>
-				<div className={styles.gridItem}>
-					<Album
-						imageSrc="/images/my-love-heaventown.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
-						albumTitle="My Love is a Painter/Heaventown [2024]"
-					/>
-				</div>
-				<div className={styles.gridItem}>
-					<Album
-						imageSrc="/images/america.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
-						albumTitle="America (The Song) [2024]"
-					/>
-				</div>
-				<div className={styles.gridItem}>
-					<BandcampAlbum
-						imageSrc="/images/humor-as-violence.jpg"
-						alt="humor as violence"
-						bandcampLink="https://maxdirado.bandcamp.com/track/humor-as-violence-demo"
-						albumTitle="humor as violence [2024] (bandcamp exclusive)"
-					/>
-				</div>
-				<div className={styles.gridItem}>
-					<Album
-						imageSrc="/images/christmas-ep.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
-						albumTitle="Christmas EP [2023]"
-					/>
-				</div>
-				<div className={styles.gridItem}>
-					<Album
-						imageSrc="/images/el-dirado.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
-						albumTitle="el dirado [2023]"
-					/>
-				</div>
-			</div>
+			{/* <blockquote
+				className="tiktok-embed"
+				cite="https://www.tiktok.com/@maxdirado/video/7331900371213897002"
+				data-video-id="7331900371213897002"
+				style={{ width: "605px", minWidth: "325px" }}
+			>
+				{" "}
+				<section>
+					{" "}
+					<a
+						target="_blank"
+						title="@maxdirado"
+						href="https://www.tiktok.com/@maxdirado?refer=embed"
+					>
+						@maxdirado
+					</a>{" "}
+					my love is a painter{" "}
+					<a
+						title="indiefolk"
+						target="_blank"
+						href="https://www.tiktok.com/tag/indiefolk?refer=embed"
+					>
+						#indiefolk
+					</a>{" "}
+					<a
+						title="originalmusic"
+						target="_blank"
+						href="https://www.tiktok.com/tag/originalmusic?refer=embed"
+					>
+						#originalmusic
+					</a>{" "}
+					<a
+						title="lyrics"
+						target="_blank"
+						href="https://www.tiktok.com/tag/lyrics?refer=embed"
+					>
+						#lyrics
+					</a>{" "}
+					<a
+						title="ebow"
+						target="_blank"
+						href="https://www.tiktok.com/tag/ebow?refer=embed"
+					>
+						#ebow
+					</a>{" "}
+					<a
+						title="blick"
+						target="_blank"
+						href="https://www.tiktok.com/tag/blick?refer=embed"
+					>
+						#blick
+					</a>{" "}
+					<a
+						title="artist"
+						target="_blank"
+						href="https://www.tiktok.com/tag/artist?refer=embed"
+					>
+						#artist
+					</a>{" "}
+					<a
+						title="painter"
+						target="_blank"
+						href="https://www.tiktok.com/tag/painter?refer=embed"
+					>
+						#painter
+					</a>{" "}
+					<a
+						title="love"
+						target="_blank"
+						href="https://www.tiktok.com/tag/love?refer=embed"
+					>
+						#love
+					</a>{" "}
+					<a
+						title="fyp"
+						target="_blank"
+						href="https://www.tiktok.com/tag/fyp?refer=embed"
+					>
+						#fyp
+					</a>{" "}
+					<a
+						target="_blank"
+						title="♬ original sound - Max DiRado"
+						href="https://www.tiktok.com/music/original-sound-7331900518387813163?refer=embed"
+					>
+						♬ original sound - Max DiRado
+					</a>{" "}
+				</section>{" "}
+			</blockquote>{" "} */}
 			<Footer />
 		</>
 	);

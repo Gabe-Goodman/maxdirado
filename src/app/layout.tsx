@@ -1,6 +1,10 @@
 import { Poppins } from "next/font/google";
 import "./globals.css"; // Ensure you are importing Tailwind's global styles
 
+// Import Swiper styles
+import "swiper/swiper-bundle.css";
+import "swiper/css/pagination";
+
 // Load Poppins font using Next.js Font Optimization
 const poppins = Poppins({
 	subsets: ["latin"], // Ensure you're loading the correct subsets

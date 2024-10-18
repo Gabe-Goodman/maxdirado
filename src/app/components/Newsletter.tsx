@@ -11,7 +11,9 @@ export function Newsletter() {
 				<h4 className="join">join my newsletter</h4>
 				<form>
 					<input type="email" placeholder="you@example.com" />
-					<button type="submit">submit</button>
+					<button type="submit" className="submit">
+						submit
+					</button>
 				</form>
 				<style jsx>{`
 					.newsletter {
@@ -32,10 +34,15 @@ export function Newsletter() {
 						font-size: 17px;
 						font-weight: 300;
 					}
+					.submit {
+						padding: 7px 20px;
+						border-radius: 4px;
+					}
 					input {
 						padding: 10px;
 						margin-right: 10px;
 						border: none;
+						border-radius: 4px;
 					}
 					button {
 						padding: 10px;

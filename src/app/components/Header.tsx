@@ -56,6 +56,11 @@ export function Header() {
 				{isOpen && (
 					<ul className="mobile-nav">
 						<li>
+							<Link href="/about" onClick={toggleMenu}>
+								About
+							</Link>
+						</li>
+						<li>
 							<Link href="/music" onClick={toggleMenu}>
 								Music
 							</Link>
@@ -65,11 +70,7 @@ export function Header() {
 								Video
 							</Link>
 						</li>
-						<li>
-							<Link href="/about" onClick={toggleMenu}>
-								About
-							</Link>
-						</li>
+
 						{/* <li>
 							<Link href="/tour" onClick={toggleMenu}>
 								Tour

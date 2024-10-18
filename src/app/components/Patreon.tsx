@@ -1,6 +1,8 @@
 // components/Patreon.tsx
 "use client";
 
+import Link from "next/link";
+
 export function Patreon() {
 	return (
 		<section className="patreon">
@@ -9,7 +11,9 @@ export function Patreon() {
 				{`and gain access to early and exclusive releases, \n 
                 stems, poetry collections and more!`}
 			</h4>
-			<button className="presave-button">patreon</button>
+			<Link href="https://www.patreon.com/maxdirado" passHref>
+				<button className="presave-button">patreon</button>
+			</Link>
 			<style jsx>{`
 				.patreon {
 					background-color: #7ff760;

@@ -24,14 +24,15 @@ export function Footer() {
 					<h4>Links</h4>
 					<ul>
 						<li>
+							<Link href="/about">About</Link>
+						</li>
+						<li>
 							<Link href="/music">Music</Link>
 						</li>
 						<li>
 							<Link href="/video">Video</Link>
 						</li>
-						<li>
-							<Link href="/about">About</Link>
-						</li>
+
 						{/* <li>
 							<Link href="/tour">Tour</Link>
 						</li>
@@ -61,12 +62,12 @@ export function Footer() {
 				.footer-content-left {
 					display: flex;
 					flex-direction: column;
-					align-items: flex-start; /* Align everything to the left */
+					align-items: flex-end; /* Align everything to the left */
 				}
 				.footer-content-right {
 					display: flex;
 					flex-direction: column;
-					align-items: flex-end; /* Align everything to the left */
+					align-items: flex-start; /* Align everything to the left */
 				}
 				.social-icons {
 					color: black;
@@ -101,7 +102,8 @@ export function Footer() {
 					text-decoration: underline;
 				}
 				.copyright {
-					color: gray;
+					margin-top: 8px;
+					color: #60676a;
 					font-size: 12px;
 				}
 				.copyright a {

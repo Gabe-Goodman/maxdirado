@@ -68,6 +68,7 @@ export function PreSave() {
 						font-weight: 400;
 					}
 					.presave-button {
+						margin-top: 10px
 						margin-bottom: 20px;
 						color: black;
 						font-size: 30px;
@@ -109,6 +110,7 @@ export function PreSave() {
 						font-weight: 400;
 					}
 					.presave-button {
+						margin-top: 2px;
 						color: black;
 						font-size: 15px;
 						font-weight: 500;
