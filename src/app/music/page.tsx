@@ -16,9 +16,9 @@ export default function MusicPage() {
 					<Album
 						imageSrc="/images/mourning-dove.jpg"
 						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
+						spotifyLink="https://open.spotify.com/album/41nYlo7rU71Azodw9SX2SV?si=eIKe4TXKQIeDuvxE_e963w"
+						appleMusicLink="https://music.apple.com/us/album/mourning-dove-single/1763912009"
+						bandcampLink="https://maxdirado.bandcamp.com/track/mourning-dove"
 						albumTitle="Mourning Dove [2024]"
 					/>
 				</div>
@@ -26,19 +26,19 @@ export default function MusicPage() {
 					<Album
 						imageSrc="/images/my-love-heaventown.jpg"
 						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
+						spotifyLink="https://open.spotify.com/album/2bzUCLgqcAyN0j2eZU5DC6?si=swqpZUloQdWNwhddNrcI6A"
+						appleMusicLink="https://music.apple.com/us/album/my-love-is-a-painter-heaventown-single/1732088896"
+						bandcampLink="https://maxdirado.bandcamp.com/album/my-love-is-a-painter-heaventown"
 						albumTitle="My Love is a Painter/Heaventown [2024]"
 					/>
 				</div>
 				<div className={styles.gridItem}>
 					<Album
 						imageSrc="/images/america.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
+						alt="America (The Song)"
+						spotifyLink="https://open.spotify.com/album/2nrHvDF4wQ0950kXo6eqdz?si=RibDH9N9RUCXHFh1QUn20A"
+						appleMusicLink="https://music.apple.com/us/album/america-the-song-single/1743855505"
+						bandcampLink="https://maxdirado.bandcamp.com/track/america-the-song"
 						albumTitle="America (The Song) [2024]"
 					/>
 				</div>
@@ -53,20 +53,18 @@ export default function MusicPage() {
 				<div className={styles.gridItem}>
 					<Album
 						imageSrc="/images/christmas-ep.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
+						alt="Christmas EP"
+						spotifyLink="https://open.spotify.com/album/2456iXq86v8SD4qKSZTJl1?si=Z5_WuYBnR9-i-0qFB4Edcw"
+						appleMusicLink="https://music.apple.com/us/album/christmas-ep/1711675806"
+						bandcampLink="https://maxdirado.bandcamp.com/album/christmas-ep"
 						albumTitle="Christmas EP [2023]"
 					/>
 				</div>
 				<div className={styles.gridItem}>
-					<Album
+					<BandcampAlbum
 						imageSrc="/images/el-dirado.jpg"
-						alt="Mourning Dove"
-						spotifyLink="https://spotify.com"
-						appleMusicLink="https://music.apple.com"
-						bandcampLink=""
+						alt="El DiRado"
+						bandcampLink="https://maxdirado.bandcamp.com/album/el-dirado"
 						albumTitle="el dirado [2023]"
 					/>
 				</div>
