@@ -55,7 +55,7 @@ export function Newsletter() {
 			</section>
 			<MediaQuery query="(max-device-width: 767px)">
 				<Image
-					src="/images/longform.jpg"
+					src="/images/longform2.jpg"
 					alt="Max DiRado"
 					width={100}
 					height={0}
