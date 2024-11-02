@@ -44,7 +44,11 @@ export function FeatureSection() {
 					Keep up with Max DiRado&apos;s feed, from candid TikToks to live
 					YouTube performances and visualizers.
 				</p>
-				<Link href="/video">
+				<Link
+					target="_blank"
+					href="https://www.tiktok.com/@maxdirado"
+					rel="noopener noreferrer"
+				>
 					<button>more</button>
 				</Link>
 			</div>

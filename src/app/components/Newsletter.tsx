@@ -1,7 +1,7 @@
 // components/Newsletter.tsx
 "use client";
-
 import Image from "next/image";
+import MediaQuery from "react-responsive";
 
 export function Newsletter() {
 	return (
@@ -53,17 +53,32 @@ export function Newsletter() {
 					}
 				`}</style>
 			</section>
-			<Image
-				src="/images/longform.jpg"
-				alt="Max DiRado"
-				width={100}
-				height={0}
-				sizes="100vw"
-				style={{
-					width: "100%",
-					height: "auto",
-				}}
-			/>
+			<MediaQuery query="(max-device-width: 767px)">
+				<Image
+					src="/images/longform.jpg"
+					alt="Max DiRado"
+					width={100}
+					height={0}
+					sizes="100vw"
+					style={{
+						width: "100%",
+						height: "auto",
+					}}
+				/>
+			</MediaQuery>
+			<MediaQuery query="(min-device-width: 768px)">
+				<Image
+					src="/images/shortform.jpg"
+					alt="Max DiRado"
+					width={100}
+					height={0}
+					sizes="100vw"
+					style={{
+						width: "100%",
+						height: "auto",
+					}}
+				/>
+			</MediaQuery>
 		</div>
 	);
 }

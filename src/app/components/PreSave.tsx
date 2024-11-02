@@ -32,6 +32,8 @@ export function PreSave() {
 				}
 				.button-container {
 					text-align: center;
+					margin-top: 5px;
+					margin-bottom: 20px;
 				}
 
 				@media (min-width: 768px) {

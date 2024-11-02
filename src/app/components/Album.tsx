@@ -99,7 +99,7 @@ export function Album({
 					transition: opacity 0.3s ease;
 				}
 
-				.album-image:hover .overlay {
+				.album-image:focus .overlay {
 					opacity: 1;
 				}
 

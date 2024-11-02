@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-	title: "Max DiRado",
+	title: "Max DiRado Music",
 	description: "Musical Artist",
 };
 

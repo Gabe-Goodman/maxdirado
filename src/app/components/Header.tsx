@@ -29,13 +29,20 @@ export function Header() {
 				{/* Full nav links for desktop view */}
 				<ul className={`nav-links ${isOpen ? "nav-active" : ""}`}>
 					<li>
+						<Link href="/about">About</Link>
+					</li>
+					<li>
 						<Link href="/music">Music</Link>
 					</li>
 					<li>
-						<Link href="/video">Video</Link>
-					</li>
-					<li>
-						<Link href="/blog">Blog</Link>
+						<Link
+							target="_blank"
+							href="https://www.tiktok.com/@maxdirado"
+							rel="noopener noreferrer"
+						>
+							Video
+						</Link>
+						{/* <Link href="https://www.tiktok.com/@maxdirado">Video</Link> */}
 					</li>
 					{/* <li>
 						<Link href="/tour">Tour</Link>

@@ -8,15 +8,27 @@ export function Footer() {
 		<footer className="footer">
 			<div className="footer-content-left">
 				<div className="social-icons">
-					<a href="https://www.instagram.com/diradomax/" aria-label="Instagram">
+					<Link
+						target="_blank"
+						href="https://www.instagram.com/diradomax/"
+						rel="noopener noreferrer"
+					>
 						<FaInstagram size={28} />
-					</a>
-					<a href="https://www.tiktok.com/@maxdirado" aria-label="TikTok">
+					</Link>
+					<Link
+						target="_blank"
+						href="https://www.tiktok.com/@maxdirado"
+						rel="noopener noreferrer"
+					>
 						<FaTiktok size={28} />
-					</a>
-					<a href="https://www.youtube.com/@maxdirado" aria-label="YouTube">
+					</Link>
+					<Link
+						target="_blank"
+						href="https://www.youtube.com/@maxdirado"
+						rel="noopener noreferrer"
+					>
 						<FaYoutube size={28} />
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div className="footer-content-right">
@@ -30,7 +42,13 @@ export function Footer() {
 							<Link href="/music">Music</Link>
 						</li>
 						<li>
-							<Link href="/video">Video</Link>
+							<Link
+								target="_blank"
+								href="https://www.tiktok.com/@maxdirado"
+								rel="noopener noreferrer"
+							>
+								Video
+							</Link>
 						</li>
 
 						{/* <li>
