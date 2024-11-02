@@ -55,7 +55,7 @@ export function Newsletter() {
 			</section>
 			<MediaQuery query="(max-device-width: 767px)">
 				<Image
-					src="/images/longform2.jpg"
+					src="/images/longform.jpg"
 					alt="Max DiRado"
 					width={100}
 					height={0}
@@ -68,7 +68,7 @@ export function Newsletter() {
 			</MediaQuery>
 			<MediaQuery query="(min-device-width: 768px)">
 				<Image
-					src="/images/shortform.jpg"
+					src="/images/shortform2.jpg"
 					alt="Max DiRado"
 					width={100}
 					height={0}
