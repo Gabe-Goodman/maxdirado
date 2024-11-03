@@ -1,16 +1,38 @@
 // components/Newsletter.tsx
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import MediaQuery from "react-responsive";
+import jsonp from "jsonp";
+
+// "https://gmail.us17.list-manage.com/subscribe/post?u=161033ed9c7afc71ade345dd6&amp;id=753cae1b46&amp;f_id=008dc2e1f0"
 
 export function Newsletter() {
+	const [email, setEmail] = useState("");
+
+	const onSubmit = (e: any) => {
+		e.preventDefault();
+		const url =
+			"https://gmail.us17.list-manage.com/subscribe/post-json?u=161033ed9c7afc71ade345dd6&amp;id=753cae1b46&amp;f_id=008dc2e1f0";
+		jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_: any, data: any) => {
+			console.log("data", data);
+			const { msg } = data;
+
+			alert(msg);
+		});
+	};
 	return (
 		<div>
 			<section className="newsletter">
 				<h3 className="keepup">keep up with me!</h3>
 				<h4 className="join">join my newsletter</h4>
-				<form>
-					<input type="email" placeholder="you@example.com" />
+				<form onSubmit={onSubmit}>
+					<input
+						type="email"
+						placeholder="you@example.com"
+						required
+						onChange={(e) => setEmail(e.target.value)}
+					/>
 					<button type="submit" className="submit">
 						submit
 					</button>

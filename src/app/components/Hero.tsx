@@ -17,6 +17,7 @@ export function Hero() {
 						width: "100%",
 						height: "auto",
 					}}
+					priority
 				/>
 			</MediaQuery>
 			<MediaQuery query="(min-device-width: 768px)">
@@ -30,6 +31,7 @@ export function Hero() {
 						width: "100%",
 						height: "auto",
 					}}
+					priority
 				/>
 			</MediaQuery>
 			<style jsx>{`
