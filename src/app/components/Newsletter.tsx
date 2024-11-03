@@ -5,8 +5,7 @@ import Image from "next/image";
 import MediaQuery from "react-responsive";
 import jsonp from "jsonp";
 
-// "https://gmail.us17.list-manage.com/subscribe/post?u=161033ed9c7afc71ade345dd6&amp;id=753cae1b46&amp;f_id=008dc2e1f0"
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export function Newsletter() {
 	const [email, setEmail] = useState("");
 
