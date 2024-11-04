@@ -10,12 +10,10 @@ export function FeatureSection() {
 			<div className="feature-card">
 				<div className="title">
 					<AiOutlineInfoCircle color="black" size="25" />
-					<h3>about</h3>
+					<h3 className="feature-heading">about</h3>
 				</div>
 				<p>
-					Max DiRado is a Los Angeles based indie folk artist whose gentle
-					vocals, poetic lyrics, and delicate playing evoke a sense of intimacy
-					and introspection.
+					Read about Max DiRado, the Los Angeles based indie folk songwriter.
 				</p>
 				<Link href="/about">
 					<button>more</button>
@@ -24,7 +22,7 @@ export function FeatureSection() {
 			<div className="feature-card">
 				<div className="title">
 					<AiOutlineInfoCircle color="black" size="25" />
-					<h3>music</h3>
+					<h3 className="feature-heading">music</h3>
 				</div>
 				<p>
 					Listen to past releases in preparation for Max DiRado’s debut album{" "}
@@ -38,7 +36,7 @@ export function FeatureSection() {
 			<div className="feature-card">
 				<div className="title">
 					<AiOutlineInfoCircle color="black" size="25" />
-					<h3>video</h3>
+					<h3 className="feature-heading">video</h3>
 				</div>
 				<p>
 					Keep up with Max DiRado&apos;s feed, from candid TikToks to live
@@ -56,18 +54,19 @@ export function FeatureSection() {
 				.features {
 					display: flex;
 					justify-content: space-around;
-					background-color: #f1d95f;
+					background-color: #f1d960;
 					padding: 40px 20px;
 				}
 				.feature-card {
 					border-radius: 4px;
-					background-color: #d95741;
+					background-color: #da5742;
 					color: white;
 					padding: 10px;
 					width: 30%;
 					text-align: left;
 				}
 				.title {
+					font-weight: bold;
 					display: flex;
 					align-items: center;
 				}

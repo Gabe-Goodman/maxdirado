@@ -65,7 +65,7 @@ export default function MusicPage() {
 						imageSrc="/images/el-dirado.jpg"
 						alt="El DiRado"
 						bandcampLink="https://maxdirado.bandcamp.com/album/el-dirado"
-						albumTitle="el dirado [2023]"
+						albumTitle="el dirado [2018]"
 					/>
 				</div>
 			</div>
