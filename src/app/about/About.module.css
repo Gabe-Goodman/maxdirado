@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.credit {
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
 .pageTitle {
   font-size: 80px;
   font-weight: 750; /* Use the loaded 700 weight from Poppins */

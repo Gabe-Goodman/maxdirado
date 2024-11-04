@@ -44,6 +44,7 @@ export default function MusicPage() {
 						}}
 						priority
 					/>
+					<div className={styles.credit}>photo by Deanna Patelis</div>
 				</div>
 			</div>
 			<Footer />
