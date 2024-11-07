@@ -33,7 +33,6 @@ export function Footer() {
 			</div>
 			<div className="footer-content-right">
 				<div className="footer-links">
-					<h4>Links</h4>
 					<ul>
 						<li>
 							<Link href="/about">About</Link>

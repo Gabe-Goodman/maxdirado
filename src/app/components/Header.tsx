@@ -42,7 +42,6 @@ export function Header() {
 						>
 							Video
 						</Link>
-						{/* <Link href="https://www.tiktok.com/@maxdirado">Video</Link> */}
 					</li>
 					{/* <li>
 						<Link href="/tour">Tour</Link>
@@ -73,7 +72,11 @@ export function Header() {
 							</Link>
 						</li>
 						<li>
-							<Link href="/video" onClick={toggleMenu}>
+							<Link
+								target="_blank"
+								href="https://www.tiktok.com/@maxdirado"
+								rel="noopener noreferrer"
+							>
 								Video
 							</Link>
 						</li>

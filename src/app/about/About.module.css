@@ -19,6 +19,17 @@
   background-color: white;
 }
 
+.pageTitle2 {
+  font-size: 80px;
+  font-weight: 750; /* Use the loaded 700 weight from Poppins */
+  color: black;
+  text-transform: lowercase;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  background-color: #fbf3dd;
+}
+
 /* Create the background effect with a pseudo-element */
 .pageTitle::before {
   content: "";

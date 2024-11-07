@@ -6,11 +6,7 @@ export default function MusicPage() {
 	return (
 		<>
 			<Header />
-			<div className={styles.titleContainer}>
-				<div className={styles.titleContainer}>
-					<h1 className={styles.pageTitle}>music</h1>
-				</div>
-			</div>
+			<h1 className={styles.pageTitle}>music</h1>
 			<div className={styles.gridContainer}>
 				<div className={styles.gridItem}>
 					<Album

@@ -7,29 +7,70 @@ export default function MusicPage() {
 	return (
 		<>
 			<Header />
-			<div className={styles.titleContainer}>
-				<div className={styles.titleContainer}>
-					<h1 className={styles.pageTitle}>about</h1>
-				</div>
-			</div>
+			<h1 className={styles.pageTitle}>about</h1>
 			<div className={styles.pageContainer}>
 				<div className={styles.aboutContainer}>
-					Max DiRado is a Los Angeles based indie folk artist whose gentle
-					vocals, poetic lyrics, and delicate nylon guitar playing evoke a sense
-					of intimacy and introspection. Influenced by artists such as Big
-					Thief, Mitski, and Father John Misty, DiRado crafts deeply sincere
-					prose that resonates with his audience. His recent online success with
-					&quot;America (The Song)&quot; and &quot;My Love is a Painter&quot;
-					has audiences already calling him a once-in-a-generation artist prior
-					to their official upcoming release. America&apos;s 8 minute runtime
-					astounded labels for being able to go viral in its full length online.
-					In 2 months he accrued 20k followers online and his monthly listeners
-					has remained above 10k for over 4 months after being only a mere 100
-					at the start of 2024. His songs highlight his ability to capture the
-					zeitgeist and speak to an audience with grace and sincerity. With each
-					release, DiRado continues to enchant listeners with his soul-stirring
-					melodies and provocative storytelling, forging connections that
-					transcend boundaries and unite us in our shared humanity.
+					&nbsp;&nbsp;&nbsp;Max DiRado&apos;s music is, at its core, radically
+					and daringly honest. His writing is akin to a diary entry or the
+					transcript of a therapy session. He writes about road rage, child
+					stars, hating (and loving) the people closest to him, his experience
+					with depression medication, death, mortality, oblivion, legacy, lust,
+					desire, nihilism, and joy. His lyrics are painfully vulnerable and
+					glaringly real. He tells you who he is, what he thinks, how he acts
+					and how you should perceive him. Max DiRado, the artist, exists in two
+					realms: the human vs. the unimpeachable storyteller. These versions of
+					himself are often at odds, yet together they create an electric and
+					imperfect portrait of an artist navigating the contradictions of life.
+					With each release, he invites listeners into his world—one that speaks
+					to the heart while embracing the beautiful messiness of being human.
+					<br />
+					&nbsp;&nbsp;&nbsp;The music has been influenced by Rock and Americana
+					artists like Father John Misty, Big Thief, Mitski, and Leonard Cohen.
+					But the melodic hooks resonate with a wide audience, with recent songs
+					like &quot;America (The Song)&quot; and &quot;My Love is a
+					Painter&quot; quickly gaining traction online, cementing his place as
+					an artist of rare sincerity. America&apos;s surprising 8-minute
+					runtime went viral, and within two months, DiRado saw a rapid rise in
+					his following, amassing 20k followers and maintaining over 15k monthly
+					listeners—remarkable growth for an artist who began 2024 with fewer
+					than 100. His songs transcend genre, capturing the zeitgeist and
+					speaking with grace, vulnerability, and a bit of that electrifying
+					unpredictability.
+					<h1 className={styles.pageTitle2}>contact</h1>
+					<div className={styles.contactContainer}>maxdiradomgmt@gmail.com</div>
+					<h1 className={styles.pageTitle2}>socials</h1>
+					<a
+						target="_blank"
+						href="https://www.instagram.com/diradomax/"
+						rel="noopener noreferrer"
+					>
+						Instagram
+					</a>
+					<br />
+					<a
+						target="_blank"
+						href="https://www.tiktok.com/@maxdirado"
+						rel="noopener noreferrer"
+					>
+						TikTok
+					</a>
+					<br />
+					<a
+						target="_blank"
+						href="https://www.youtube.com/@maxdirado"
+						rel="noopener noreferrer"
+					>
+						YouTube
+					</a>
+					<br />
+					<a
+						target="_blank"
+						href="https://www.patreon.com/maxdirado"
+						rel="noopener noreferrer"
+					>
+						Patreon
+					</a>
+					<br />
 				</div>
 				<div className="relative item-detail">
 					<Image
@@ -47,6 +88,7 @@ export default function MusicPage() {
 					<div className={styles.credit}>photo by Deanna Patelis</div>
 				</div>
 			</div>
+
 			<Footer />
 		</>
 	);

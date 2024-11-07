@@ -9,11 +9,7 @@ export default function VideoPage() {
 	return (
 		<>
 			<Header />
-			<div className={styles.titleContainer}>
-				<div className={styles.titleContainer}>
-					<h1 className={styles.pageTitle}>Tiktok</h1>
-				</div>
-			</div>
+			<h1 className={styles.pageTitle}>Tiktok</h1>
 			<>
 				<TikTokEmbedComponent />
 				<Swiper

@@ -11,7 +11,11 @@ export function Patreon() {
 				{`and gain access to early and exclusive releases, \n 
                 stems, poetry collections and more!`}
 			</h4>
-			<Link href="https://www.patreon.com/maxdirado" passHref>
+			<Link
+				target="_blank"
+				href="https://www.patreon.com/maxdirado"
+				rel="noopener noreferrer"
+			>
 				<button className="presave-button">patreon</button>
 			</Link>
 			<style jsx>{`
