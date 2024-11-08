@@ -1,19 +1,13 @@
-"use client"; // Ensure this is marked as a Client Component
-import { useState } from "react";
-import Link from "next/link";
+// components/Header.tsx
 import Image from "next/image";
-import { FaBars, FaTimes } from "react-icons/fa"; // Install react-icons if you haven't: npm install react-icons
+import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa";
+import styles from "./Header.module.css";
 
 export function Header() {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	};
-
 	return (
-		<header className="header">
-			<Link href="/">
+		<header className={styles.header}>
+			<a href="/">
 				<Image
 					width={300}
 					height={300}
@@ -24,167 +18,44 @@ export function Header() {
 						height: "auto",
 					}}
 				/>
-			</Link>
-			<nav>
-				{/* Full nav links for desktop view */}
-				<ul className={`nav-links ${isOpen ? "nav-active" : ""}`}>
-					<li>
-						<Link href="/about">About</Link>
-					</li>
-					<li>
-						<Link href="/music">Music</Link>
-					</li>
-					<li>
-						<Link
-							target="_blank"
-							href="https://www.tiktok.com/@maxdirado"
-							rel="noopener noreferrer"
-						>
-							Video
-						</Link>
-					</li>
-					{/* <li>
-						<Link href="/tour">Tour</Link>
-					</li>
-					<li>
-						<Link href="/merch">Merch</Link>
-					</li>
-					<li>
-						<Link href="/contact">Contact</Link>
-					</li> */}
-				</ul>
-				{/* Hamburger menu for mobile view */}
-				<div className="hamburger" onClick={toggleMenu}>
-					{isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-				</div>
+			</a>
 
-				{/* Dropdown for mobile menu */}
-				{isOpen && (
-					<ul className="mobile-nav">
-						<li>
-							<Link href="/about" onClick={toggleMenu}>
-								About
-							</Link>
-						</li>
-						<li>
-							<Link href="/music" onClick={toggleMenu}>
-								Music
-							</Link>
-						</li>
-						<li>
-							<Link
-								target="_blank"
-								href="https://www.tiktok.com/@maxdirado"
-								rel="noopener noreferrer"
-							>
-								Video
-							</Link>
-						</li>
+			{/* Checkbox for toggling the menu */}
+			<input type="checkbox" id="menuToggle" className={styles.menuToggle} />
 
-						{/* <li>
-							<Link href="/tour" onClick={toggleMenu}>
-								Tour
-							</Link>
+			{/* Label for the checkbox to display the hamburger icon */}
+			<label htmlFor="menuToggle" className={styles.hamburger}>
+				<FaBars size={24} className={styles.openIcon} />
+				<FaTimes size={24} className={styles.closeIcon} />
+			</label>
+
+			{/* Fullscreen overlay menu */}
+			<div className={styles.overlay}>
+				<nav className={styles.overlayNav}>
+					<ul className={styles.navLinks}>
+						<li>
+							<Link href="/">home</Link>
 						</li>
 						<li>
-							<Link href="/merch" onClick={toggleMenu}>
-								Merch
-							</Link>
+							<Link href="/about">about</Link>
 						</li>
 						<li>
-							<Link href="/contact" onClick={toggleMenu}>
-								Contact
-							</Link>
-						</li> */}
+							<Link href="/music">music</Link>
+						</li>
+						<li>
+							<label htmlFor="menuToggle">
+								<a
+									href="https://www.tiktok.com/@maxdirado"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									video
+								</a>
+							</label>
+						</li>
 					</ul>
-				)}
-			</nav>
-			<style jsx>{`
-				.header {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					padding: 20px;
-					background-color: white;
-					box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-					z-index: 3;
-					color: black;
-				}
-				.nav-links {
-					list-style: none;
-					display: flex;
-					gap: 20px;
-				}
-				.nav-links a {
-					text-decoration: none;
-					color: black;
-					font-weight: bold;
-					transition: color 0.3s ease;
-				}
-				.nav-links a:hover {
-					color: purple;
-				}
-
-				/* Hamburger menu styles */
-				.hamburger {
-					display: none;
-					cursor: pointer;
-				}
-
-				.mobile-nav {
-					list-style: none;
-					position: absolute;
-					top: 60px;
-					right: 20px;
-					background-color: white;
-					width: 200px;
-					border-radius: 8px;
-					box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-					padding: 10px;
-					animation: fadeIn 0.3s ease;
-					z-index: 3;
-					color: black;
-				}
-
-				.mobile-nav li {
-					margin: 10px 0;
-				}
-
-				.mobile-nav a {
-					color: black;
-					text-decoration: none;
-					font-weight: bold;
-					display: block;
-					padding: 10px;
-					transition: color 0.3s ease;
-				}
-
-				.mobile-nav a:hover {
-					color: purple;
-				}
-
-				/* Animation for dropdown */
-				@keyframes fadeIn {
-					from {
-						opacity: 0;
-						transform: translateY(-10px);
-					}
-					to {
-						opacity: 1;
-						transform: translateY(0);
-					}
-				}
-
-				/* Media query for responsiveness */
-				@media (max-width: 768px) {
-					.nav-links {
-						display: none;
-					}
-					.hamburger {
-						display: block;
-					}
-				}
-			`}</style>
+				</nav>
+			</div>
 		</header>
 	);
 }

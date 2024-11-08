@@ -1,12 +1,12 @@
-// components/Album.tsx
-"use client";
-
-import { FaBandcamp } from "react-icons/fa";
+import { FaSpotify, FaApple, FaBandcamp } from "react-icons/fa";
+import styles from "./BandcampAlbum.module.css";
 import Image from "next/image";
 
-type BandcampAlbumProps = {
+type AlbumProps = {
 	imageSrc: string;
 	alt: string;
+	spotifyLink: string;
+	appleMusicLink: string;
 	bandcampLink: string;
 	albumTitle: string;
 };
@@ -16,10 +16,17 @@ export function BandcampAlbum({
 	alt,
 	bandcampLink,
 	albumTitle,
-}: BandcampAlbumProps) {
+}: AlbumProps) {
+	// Use `typeof window !== "undefined"` to check for client-side rendering
+	// if (typeof window !== "undefined") {
+	// 	console.log("Variant 2: Application is on client side");
+	// } else {
+	// 	console.log("Variant 2: Application is on server side");
+	// }
+
 	return (
-		<div className="album">
-			<div className="album-image">
+		<div className={styles.album}>
+			<div className={styles.albumImage}>
 				<Image
 					src={imageSrc}
 					alt={alt}
@@ -31,7 +38,7 @@ export function BandcampAlbum({
 						height: "auto",
 					}}
 				/>
-				<div className="overlay">
+				<div className={styles.overlay}>
 					<a
 						href={bandcampLink}
 						aria-label="Bandcamp"
@@ -42,66 +49,7 @@ export function BandcampAlbum({
 					</a>
 				</div>
 			</div>
-			<p>{albumTitle}</p>
-
-			<style jsx>{`
-				.album {
-					position: relative;
-					margin-bottom: 20px;
-				}
-
-				.album-image {
-					position: relative;
-					width: 100%;
-					height: auto;
-					overflow: hidden;
-				}
-
-				.album-image img {
-					display: block;
-					width: 100%;
-					height: auto;
-					transition: opacity 0.3s ease;
-				}
-
-				.overlay {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background-color: rgba(0, 0, 0, 0.6);
-					opacity: 0;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					gap: 20px;
-					transition: opacity 0.3s ease;
-				}
-
-				.album-image:hover .overlay {
-					opacity: 1;
-				}
-
-				.album-image:hover img {
-					opacity: 0.5;
-				}
-
-				.overlay a {
-					color: white;
-					transition: transform 0.3s ease;
-				}
-
-				.overlay a:hover {
-					transform: scale(1.2);
-				}
-
-				p {
-					text-align: center;
-					margin-top: 10px;
-					font-size: 16px;
-				}
-			`}</style>
+			<p className={styles.albumTitle}>{albumTitle}</p>
 		</div>
 	);
 }

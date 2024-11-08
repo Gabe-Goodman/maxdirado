@@ -1,0 +1,91 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    color: black;
+}
+
+/* Hidden checkbox for menu toggle */
+.menuToggle {
+    display: none;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+    cursor: pointer;
+    z-index: 5; /* Ensure the icon is on top */
+}
+
+/* Show the open icon (hamburger) and hide the close icon ("X") by default */
+.openIcon {
+    display: inline;
+    color: black;
+}
+
+.closeIcon {
+    display: none;
+}
+
+/* When menu is open, hide the hamburger and show the white "X" icon */
+.menuToggle:checked + .hamburger .openIcon {
+    display: none;
+}
+
+.menuToggle:checked + .hamburger .closeIcon {
+    display: inline;
+    color: white; /* Set "X" icon to white */
+}
+
+/* Overlay menu */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 4;
+}
+
+/* Show overlay when menu is open */
+.menuToggle:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Navigation inside overlay */
+.overlayNav {
+    text-align: center;
+}
+
+.navLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.navLinks li {
+    margin: 20px 0;
+}
+
+.navLinks a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #6160c2; /* Change to desired hover color */
+}
