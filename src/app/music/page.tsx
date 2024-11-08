@@ -10,6 +10,7 @@ export default function MusicPage() {
 			<div className={styles.gridContainer}>
 				<div className={styles.gridItem}>
 					<Album
+						priority={true}
 						imageSrc="/images/mourning-dove.jpg"
 						alt="Mourning Dove"
 						spotifyLink="https://open.spotify.com/album/41nYlo7rU71Azodw9SX2SV?si=eIKe4TXKQIeDuvxE_e963w"
