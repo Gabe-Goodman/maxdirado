@@ -5,8 +5,6 @@ import Image from "next/image";
 type AlbumProps = {
 	imageSrc: string;
 	alt: string;
-	spotifyLink: string;
-	appleMusicLink: string;
 	bandcampLink: string;
 	albumTitle: string;
 };
