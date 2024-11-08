@@ -18,14 +18,8 @@ export function Album({
 	appleMusicLink,
 	bandcampLink,
 	albumTitle,
+	priority,
 }: AlbumProps) {
-	// Use `typeof window !== "undefined"` to check for client-side rendering
-	// if (typeof window !== "undefined") {
-	// 	console.log("Variant 2: Application is on client side");
-	// } else {
-	// 	console.log("Variant 2: Application is on server side");
-	// }
-
 	return (
 		<div className={styles.album}>
 			<div className={styles.albumImage}>
