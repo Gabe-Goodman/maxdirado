@@ -1,4 +1,4 @@
-import { FaSpotify, FaApple, FaBandcamp } from "react-icons/fa";
+import { FaBandcamp } from "react-icons/fa";
 import styles from "./BandcampAlbum.module.css";
 import Image from "next/image";
 
