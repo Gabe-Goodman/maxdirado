@@ -9,6 +9,7 @@ type AlbumProps = {
 	appleMusicLink: string;
 	bandcampLink: string;
 	albumTitle: string;
+	priority?: boolean;
 };
 
 export function Album({
