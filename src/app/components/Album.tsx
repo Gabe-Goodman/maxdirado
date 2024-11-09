@@ -25,6 +25,7 @@ export function Album({
 		<div className={styles.album}>
 			<div className={styles.albumImage}>
 				<Image
+					priority={priority}
 					src={imageSrc}
 					alt={alt}
 					width={300}
