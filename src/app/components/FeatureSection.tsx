@@ -9,7 +9,9 @@ export function FeatureSection() {
 		<section className="features">
 			<div className="feature-card">
 				<div className="title">
-					<AiOutlineInfoCircle color="black" size="25" />
+					<div>
+						<AiOutlineInfoCircle color="black" size="25" />
+					</div>
 					<h3 className="feature-heading">about</h3>
 				</div>
 				<p>
@@ -21,7 +23,9 @@ export function FeatureSection() {
 			</div>
 			<div className="feature-card">
 				<div className="title">
-					<AiOutlineInfoCircle color="black" size="25" />
+					<div>
+						<AiOutlineInfoCircle color="black" size="25" />
+					</div>
 					<h3 className="feature-heading">music</h3>
 				</div>
 				<p>
@@ -35,7 +39,9 @@ export function FeatureSection() {
 			</div>
 			<div className="feature-card">
 				<div className="title">
-					<AiOutlineInfoCircle color="black" size="25" />
+					<div>
+						<AiOutlineInfoCircle color="black" size="25" />
+					</div>
 					<h3 className="feature-heading">video</h3>
 				</div>
 				<p>
