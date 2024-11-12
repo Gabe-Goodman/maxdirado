@@ -30,7 +30,7 @@ export function Album({
 					alt={alt}
 					width={300}
 					height={300}
-					sizes="100vw"
+					sizes="(max-width: 768px) 100vw, 700px"
 					style={{
 						width: "100%",
 						height: "auto",
