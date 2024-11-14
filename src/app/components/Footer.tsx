@@ -65,9 +65,13 @@ export function Footer() {
 			<div className={styles.copyright}>
 				<p>
 					Copyright Max DiRado.{" "}
-					<a href="https://github.com/Gabe-Goodman?tab=repositories">
+					<Link
+						target="_blank"
+						href="https://github.com/Gabe-Goodman?tab=repositories"
+						rel="noopener noreferrer"
+					>
 						Created by Gabe Goodman
-					</a>
+					</Link>
 				</p>
 			</div>
 		</footer>

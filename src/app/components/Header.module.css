@@ -15,7 +15,7 @@
 .iconContainer {
 	display: flex;
 	align-items: center;
-	gap: 20px; /* Control spacing between icons and hamburger */
+	gap: 40px; /* Control spacing between icons and hamburger */
 }
 
 /* Social Icons Styling for Desktop */
@@ -29,6 +29,7 @@
 	color: black;
 	font-size: 1.8rem; /* Icon size */
 	transition: color 0.3s ease;
+	font-size: 2.5rem;
 }
 
 .socialIconsDesktop a:hover {
@@ -163,6 +164,7 @@
 	color: white;
 	font-size: 1.5rem;
 	transition: color 0.3s ease;
+	font-size: 2rem;
 }
 
 .socialIcons a:hover {
@@ -180,5 +182,11 @@
 @media (max-width: 768px) {
 	.socialIconsDesktop {
 		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.navLinks a {
+		font-size: 3rem; /* Increase size on desktop */
 	}
 }

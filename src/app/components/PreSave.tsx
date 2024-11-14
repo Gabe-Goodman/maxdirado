@@ -36,18 +36,6 @@ export function PreSave() {
 					margin-bottom: 20px;
 				}
 
-				.heroImageDesktop {
-	width: 100%;
-	height: auto;
-	display: none;
-}
-
-.heroImageMobile {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
 				@media (min-width: 768px) {
 					.presave-text-container {
 						background-color: #f29048;
@@ -82,7 +70,7 @@ export function PreSave() {
 						font-weight: 400;
 					}
 					.presave-button {
-						margin-top: 10px
+						margin-top: 10px;
 						margin-bottom: 20px;
 						color: black;
 						font-size: 30px;
