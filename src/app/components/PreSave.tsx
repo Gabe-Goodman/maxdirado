@@ -36,6 +36,18 @@ export function PreSave() {
 					margin-bottom: 20px;
 				}
 
+				.heroImageDesktop {
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+.heroImageMobile {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 				@media (min-width: 768px) {
 					.presave-text-container {
 						background-color: #f29048;

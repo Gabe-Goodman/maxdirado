@@ -5,3 +5,26 @@
 	width: 100%;
 	background-color: #f9f9f9;
 }
+
+/* HeroImage.module.css */
+.heroImageDesktop {
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+.heroImageMobile {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.heroImageDesktop {
+		display: block;
+	}
+
+	.heroImageMobile {
+		display: none;
+	}
+}

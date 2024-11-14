@@ -13,7 +13,7 @@ export function Header() {
 					height={300}
 					src="/images/maxdiradologo.png"
 					alt="Max Dirado"
-					style={{ maxWidth: "100%", height: "auto" }}
+					style={{ maxWidth: "100%", width: "auto", height: "auto" }}
 				/>
 			</Link>
 			<MenuToggle /> {/* Include the client component here */}
