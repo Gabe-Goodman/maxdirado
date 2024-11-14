@@ -4,6 +4,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import { FaInstagram, FaTiktok, FaYoutube, FaPatreon } from "react-icons/fa6";
 
 export default function MenuToggle() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +53,38 @@ export default function MenuToggle() {
 						</li>
 					</ul>
 				</nav>
+
+				{/* Social icons at the bottom of the menu */}
+				<div className={styles.socialIcons}>
+					<Link
+						target="_blank"
+						href="https://www.instagram.com/diradomax/"
+						rel="noopener noreferrer"
+					>
+						<FaInstagram size={28} />
+					</Link>
+					<Link
+						target="_blank"
+						href="https://www.tiktok.com/@maxdirado"
+						rel="noopener noreferrer"
+					>
+						<FaTiktok size={28} />
+					</Link>
+					<Link
+						target="_blank"
+						href="https://www.youtube.com/@maxdirado"
+						rel="noopener noreferrer"
+					>
+						<FaYoutube size={28} />
+					</Link>
+					<Link
+						target="_blank"
+						href="https://www.patreon.com/maxdirado"
+						rel="noopener noreferrer"
+					>
+						<FaPatreon size={28} />
+					</Link>
+				</div>
 			</div>
 		</>
 	);

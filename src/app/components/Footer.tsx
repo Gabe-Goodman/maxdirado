@@ -1,7 +1,7 @@
 // components/Footer.tsx
 "use client";
 import Link from "next/link";
-import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaYoutube, FaPatreon } from "react-icons/fa6";
 
 export function Footer() {
 	return (
@@ -28,6 +28,13 @@ export function Footer() {
 						rel="noopener noreferrer"
 					>
 						<FaYoutube size={28} />
+					</Link>
+					<Link
+						target="_blank"
+						href="https://www.patreon.com/maxdirado"
+						rel="noopener noreferrer"
+					>
+						<FaPatreon size={28} />
 					</Link>
 				</div>
 			</div>

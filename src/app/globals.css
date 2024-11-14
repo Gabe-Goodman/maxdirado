@@ -5,18 +5,19 @@
 /* Global padding for the main content to avoid being covered by the fixed header */
 .main-content {
 	padding-top: 80px; /* Match the header height here */
+	background-color: white;
 }
 
 /* Global colors */
 :root {
 	--background: #ffffff;
-	--foreground: #171717;
+	--foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
+		--background: #ffffff;
+		--foreground: #ffffff;
 	}
 }
 
