@@ -2,7 +2,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import MediaQuery from "react-responsive";
 import jsonp from "jsonp";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
