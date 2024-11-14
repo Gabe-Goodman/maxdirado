@@ -13,12 +13,14 @@ export default function HomePage() {
 	return (
 		<div>
 			<Header />
-			<Hero />
-			<PreSave />
-			<FeatureSection />
-			<Patreon />
-			<Newsletter />
-			<Footer />
+			<div className="main-content">
+				<Hero />
+				<PreSave />
+				<FeatureSection />
+				<Patreon />
+				<Newsletter />
+				<Footer />
+			</div>
 		</div>
 	);
 }

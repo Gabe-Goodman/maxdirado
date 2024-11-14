@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MusicPage() {
 	return (
-		<>
+		<div className="main-content">
 			<Header />
 			<h1 className={styles.pageTitle}>about</h1>
 			<div className={styles.pageContainer}>
@@ -90,6 +90,6 @@ export default function MusicPage() {
 			</div>
 
 			<Footer />
-		</>
+		</div>
 	);
 }

@@ -4,7 +4,7 @@ import { Header, Footer, Album, BandcampAlbum } from "../components"; // Import 
 
 export default function MusicPage() {
 	return (
-		<>
+		<div className="main-content">
 			<Header />
 			<h1 className={styles.pageTitle}>music</h1>
 			<div className={styles.gridContainer}>
@@ -67,6 +67,6 @@ export default function MusicPage() {
 				</div>
 			</div>
 			<Footer />
-		</>
+		</div>
 	);
 }
