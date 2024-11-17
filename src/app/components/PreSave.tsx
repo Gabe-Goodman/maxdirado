@@ -13,7 +13,7 @@ export function PreSave() {
 					<p className="presave-info-text">out everywhere now</p>
 					<div className="button-container">
 						<Link href="https://ffm.to/k7axjdk" passHref>
-							<button className="presave-button">stream</button>
+							<button className="presave-button">pre-save</button>
 						</Link>
 					</div>
 				</div>
@@ -92,7 +92,6 @@ export function PreSave() {
 						margin-top: -100px;
 					}
 					.presave-text {
-						margin-top: 10px;
 						color: black;
 						font-size: 26px;
 						font-weight: 750;
