@@ -13,7 +13,7 @@ export function PreSave() {
 					<p className="presave-info-text">out everywhere now</p>
 					<div className="button-container">
 						<Link href="https://ffm.to/k7axjdk" passHref>
-							<button className="presave-button">pre-save</button>
+							<button className="presave-button">stream</button>
 						</Link>
 					</div>
 				</div>
