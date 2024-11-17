@@ -10,10 +10,10 @@ export function PreSave() {
 				<div className="presave-text-container">
 					<h2 className="presave-text">new song</h2>
 					<h3 className="presave-track-name-text">&quot;SSRI&quot;</h3>
-					<p className="presave-info-text">out November 15th</p>
+					<p className="presave-info-text">out everywhere now</p>
 					<div className="button-container">
 						<Link href="https://ffm.to/k7axjdk" passHref>
-							<button className="presave-button">pre-save</button>
+							<button className="presave-button">stream</button>
 						</Link>
 					</div>
 				</div>
@@ -71,7 +71,7 @@ export function PreSave() {
 					}
 					.presave-button {
 						margin-top: 10px;
-						margin-bottom: 20px;
+						margin-bottom: 10px;
 						color: black;
 						font-size: 30px;
 						font-weight: 500;
