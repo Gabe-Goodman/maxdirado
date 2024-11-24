@@ -30,10 +30,9 @@ export function Album({
 					alt={alt}
 					width={300}
 					height={300}
-					sizes="(max-width: 768px) 100vw, 700px"
 					style={{
-						width: "100%",
-						height: "auto",
+						width: "700px",
+						height: "700px",
 					}}
 				/>
 				<div className={styles.overlay}>
