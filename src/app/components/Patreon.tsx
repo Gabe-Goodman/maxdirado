@@ -6,17 +6,17 @@ import Link from "next/link";
 export function Patreon() {
 	return (
 		<section className="patreon">
-			<h3 className="keepup">subscribe to my patreon</h3>
+			<h3 className="keepup">subscribe to my substack</h3>
 			<h4 className="join">
 				{`and gain access to early and exclusive releases, \n 
                 stems, poetry collections and more!`}
 			</h4>
 			<Link
 				target="_blank"
-				href="https://www.patreon.com/maxdirado"
+				href="https://substack.com/@maxdirado"
 				rel="noopener noreferrer"
 			>
-				<button className="presave-button">patreon</button>
+				<button className="presave-button">substack</button>
 			</Link>
 			<style jsx>{`
 				.patreon {
