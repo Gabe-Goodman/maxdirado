@@ -1,6 +1,7 @@
 // components/Footer.tsx
 import Link from "next/link";
-import { FaInstagram, FaTiktok, FaYoutube, FaPatreon } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { BsSubstack } from "react-icons/bs";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -31,10 +32,10 @@ export function Footer() {
 					</Link>
 					<Link
 						target="_blank"
-						href="https://www.patreon.com/maxdirado"
+						href="https://substack.com/@maxdirado"
 						rel="noopener noreferrer"
 					>
-						<FaPatreon size={28} />
+						<BsSubstack size={28} />
 					</Link>
 				</div>
 			</div>

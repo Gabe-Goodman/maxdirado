@@ -4,7 +4,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
-import { FaInstagram, FaTiktok, FaYoutube, FaPatreon } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { BsSubstack } from "react-icons/bs";
 
 export default function MenuToggle() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -79,10 +80,10 @@ export default function MenuToggle() {
 					</Link>
 					<Link
 						target="_blank"
-						href="https://www.patreon.com/maxdirado"
+						href="https://substack.com/@maxdirado"
 						rel="noopener noreferrer"
 					>
-						<FaPatreon size={28} />
+						<BsSubstack size={28} />
 					</Link>
 				</div>
 			</div>

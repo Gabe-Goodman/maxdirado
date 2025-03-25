@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import MenuToggle from "./MenuToggle"; // Import the client component
-import { FaInstagram, FaTiktok, FaYoutube, FaPatreon } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { BsSubstack } from "react-icons/bs";
 
 export function Header() {
 	return (
@@ -42,11 +43,11 @@ export function Header() {
 						<FaYoutube />
 					</Link>
 					<Link
-						href="https://www.patreon.com/maxdirado"
 						target="_blank"
+						href="https://substack.com/@maxdirado"
 						rel="noopener noreferrer"
 					>
-						<FaPatreon />
+						<BsSubstack />
 					</Link>
 				</div>
 				<MenuToggle />
